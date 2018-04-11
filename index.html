@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Target Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section id="welcome">
+    <h1>Target Practice</h1>
+    <button onclick="startGame(2)">2x2 Grid</button>
+    <button onclick="startGame(3)">3x3 Grid</button>
+    <p>(enters fullscreen mode)</p>
+  </section>
+
+  <section id="stats">
+    <table>
+      <tbody>
+        <tr><td>Hops:</td><td id="score_hops"></td></tr>
+        <tr><td>Hits:</td><td id="score_hits"></td></tr>
+        <tr><td>Time:</td><td id="score_time"></td></tr>
+        <tr><td>Avg Hops:</td><td id="score_hops_avg"></td><td>(last 10 hits)</td></tr>
+        <tr><td>Avg Time:</td><td id="score_time_avg"></td><td>(last 10 hits)</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="game"></section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
